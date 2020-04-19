@@ -23,7 +23,7 @@ var papers = new Array (
     {
         id : "hhmf_DMKD",
         name : "HHMF: hidden hierarchical matrix factorization for recommender systems.",
-		tags : new Array(tagList.ml, tagList.recsys, tagList.fintech),
+		tags : new Array(tagList.ml, tagList.recsys),
         coauthors : new Array(authorList.hli,authorList.yliu,authorList.yqqian, authorList.nikos, authorList.wttu_c, authorList.david),
         conference : "Data Mining and Knowledge Discovery",
         type : "j",
@@ -34,12 +34,12 @@ var papers = new Array (
     {
         id : "acq_KBS",
         name : "Advanced community question answering by leveraging external knowledge and multi-task learning",
-		tags : new Array(tagList.ml, tagList.recsys, tagList.fintech),
+		tags : new Array(tagList.ml, tagList.dl, tagList.nlp),
         coauthors : new Array(authorList.myang, authorList.wttu_c, authorList.qqiang, authorList.wzhao, authorList.qliu, authorList.jzhu),
         conference : "Knowledge-Based Systems",
         type : "j",
 		year : "2019",
-        paperAbstract : "<p>Community question answering (CQA) is an important but challenging task. Meantime, as the theory of deep learning develops, remarkable progress has been made by deep neural networks. This paper studies an advanced deep neural network that not only uses external knowledge to learn better representations of questions and answers but also improves representation learning by considering question categorization as an auxiliary task. Specifically, we propose a novel Multi-task and Knowledge enhanced Multi-head Interactive Attention network for Community Question Answering (MKMIA-CQA). It contains a document modeling module responsible for utilizing external commonsense knowledge to help identify background information (entity mentions and their relations) and filter out noise information from the long text which has complicated semantic and syntactic structures. Moreover, the model is trained in a multi-task manner. It regards community question answering as the primary task and question categorization as the auxiliary task, which aims to learn a category-aware encoder and improve the quality of locating the salient information of a long question. The experimental results on three widely used CQA datasets demonstrate that our model achieves impressive results compared to other strong competitors..</p>",
+        paperAbstract : "<p>Community question answering (CQA) is an important but challenging task. Meantime, as the theory of deep learning develops, remarkable progress has been made by deep neural networks. This paper studies an advanced deep neural network that not only uses external knowledge to learn better representations of questions and answers but also improves representation learning by considering question categorization as an auxiliary task. Specifically, we propose a novel Multi-task and Knowledge enhanced Multi-head Interactive Attention network for Community Question Answering (MKMIA-CQA). It contains a document modeling module responsible for utilizing external commonsense knowledge to help identify background information (entity mentions and their relations) and filter out noise information from the long text which has complicated semantic and syntactic structures. Moreover, the model is trained in a multi-task manner. It regards community question answering as the primary task and question categorization as the auxiliary task, which aims to learn a category-aware encoder and improve the quality of locating the salient information of a long question. The experimental results on three widely used CQA datasets demonstrate that our model achieves impressive results compared to other strong competitors.</p>",
     },
 
 

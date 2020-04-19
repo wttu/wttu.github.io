@@ -19,6 +19,28 @@ var papers = new Array (
 		year : "",
         paperAbstract : "<p>本文专注于域适应算法上的研究,并探索域适应算法在基于用户迁移的个性化机器学习上的应用潜力。在理论方面,本文提出了三种创新的域适应算法。另外本文在实际应用方法特别提出了利用域适应算法来实现基于用户迁移的机器学习应用,并以脑电信号分类系统为例展现了这一思想的重要性和可行性。 域适应问题在机器学习领域已获得了越来越广泛的关注。它对应于训练样本和测试样本是基于不同分布的情景,这在真实的应用上是非常普遍的。例如对于面向用户的服务型机器学习应用(例如脑电分类,语音识别,脸部识别)上,常常为了提高用户体验以及一些实际的约束而面临训练样本和测试样本是来自于不同的用户群体,此时由于用户群体上的分类模式差异,会导致训练模型不适合目标用户。又例如自然语言处理中,也常常要面临训练预料和测试样例的数据分布差异。所以,域适应是一个十分具有研究价值的问题。本文提出了三种创新的域适应算法,从特征表示和分类模型阶段都对传统方法做出了改进,并以脑电信号分类为例探讨它们在实现基于用户迁移的机器学习应用上的前景。 本文提出的第一个域适应的算法是可迁移的判别式特征降维方法,它从判别性和迁移性两个方面来同时优化低维空间。从而避免了传统的判别性降维方法得到的低维空间将过拟合于源数据的危险。它通过设计度量域适应情景中低维空间的判别性和迁移性的数学项,然后通过优化由它们构成的目标函数来学习到低维空间。从而使得在低维空间中,不仅保持了数据的判别性,也能够增加源域模型对于目标域的迁移性。本文通过利用模拟数据和真实数据上的实验来验证了算法能够学习到一个更加适合域适应情景的低维空间。并通过可视化这些低维空间来更加验证了它们的优势。 本文提出的第二个算法是基于稳健适应双视角和反向近邻策略的动态域适应,它的思想是利用集成学习框架来结合多个源用户数据产生的基本模型。算法在两个层次上提出了创新,在构建基本模型集合时,从适应性和稳健性两方面来进行优化从而构建具有互补性的基本模型集。适应性是针对于适应目标域而言,稳健性是针对于能够稳健于域之间差异而言。另外,在决定模型权值层次上,算法利用了基于反向近邻策略的动态加权准则。利用每个测试样本在源数据上的近邻们的结构来动态决定权值。在九个真实数据上的实验表明了算法的有效性。 本文提出的最后一个算法是针对于消除对目标域样本限制的出发点设计的域适应算法。通过利用集成学习框架将动态分配权值转化为可以利用统计分类理论的二类分类问题,算法为每个基本模型建立了一个模型友好分类器,这个分类器的训练目标是为了预测一个样本是否适合于对应模型来进行后续任务。如此,针对于每个测试样本,能够根据基本模型集的模型友好分类器集的结果来决定最后在组合分类器中的权值。算法不要求目标域具有训练或测试样本,只是根据源域和目标域的分布不同的事实来更加小心地决定权值,从而增加模型对于测试样本的泛化性能。在真实数据集上的实验结果证明了算法的有效性。 总结下来,本文不仅从理论上提出了域适应领域的创新算法,也结合探讨了有前景的应用方向。从理论和应用两个层次上都具有一定的创新价值。</p>",
     },	
+	
+    {
+        id : "hhmf_DMKD",
+        name : "HHMF: hidden hierarchical matrix factorization for recommender systems.",
+		tags : new Array(tagList.ml, tagList.recsys, tagList.fintech),
+        coauthors : new Array(authorList.hli,authorList.yliu,authorList.yqqian, authorList.nikos, authorList.wttu_c, authorList.david),
+        conference : "Data Mining and Knowledge Discovery",
+        type : "j",
+		year : "2019",
+        paperAbstract : "<p>Matrix factorization (MF) is one of the most powerful techniques used in recommender systems. MF models the (user, item) interactions behind historical explicit or implicit ratings. Standard MF does not capture the hierarchical structural correlations, such as publisher and advertiser in advertisement recommender systems, or the taxonomy (e.g., tracks, albums, artists, genres) in music recommender systems. There are a few hierarchical MF approaches, but they require the hierarchical structures to be known beforehand. In this paper, we propose a Hidden Hierarchical Matrix Factorization (HHMF) technique, which learns the hidden hierarchical structure from the user-item rating records. HHMF does not require the prior knowledge of hierarchical structure; hence, as opposed to existing hierarchical MF methods, HHMF can be applied when this information is either explicit or implicit. According to our extensive experiments, HHMF outperforms existing methods, demonstrating that the discovery of latent hier-archical structures indeed improves the quality of recommendation.</p>",
+    },
+
+    {
+        id : "acq_KBS",
+        name : "Advanced community question answering by leveraging external knowledge and multi-task learning",
+		tags : new Array(tagList.ml, tagList.recsys, tagList.fintech),
+        coauthors : new Array(authorList.myang, authorList.wttu_c, authorList.qqiang, authorList.wzhao, authorList.qliu, authorList.jzhu),
+        conference : "Knowledge-Based Systems",
+        type : "j",
+		year : "2019",
+        paperAbstract : "<p>Community question answering (CQA) is an important but challenging task. Meantime, as the theory of deep learning develops, remarkable progress has been made by deep neural networks. This paper studies an advanced deep neural network that not only uses external knowledge to learn better representations of questions and answers but also improves representation learning by considering question categorization as an auxiliary task. Specifically, we propose a novel Multi-task and Knowledge enhanced Multi-head Interactive Attention network for Community Question Answering (MKMIA-CQA). It contains a document modeling module responsible for utilizing external commonsense knowledge to help identify background information (entity mentions and their relations) and filter out noise information from the long text which has complicated semantic and syntactic structures. Moreover, the model is trained in a multi-task manner. It regards community question answering as the primary task and question categorization as the auxiliary task, which aims to learn a category-aware encoder and improve the quality of locating the salient information of a long question. The experimental results on three widely used CQA datasets demonstrate that our model achieves impressive results compared to other strong competitors..</p>",
+    },
 
 
     {
@@ -77,7 +99,7 @@ var papers = new Array (
 		year : "2017",
         paperAbstract : "<p>Users of e-commerce sites often read reviews of products before deciding to purchase them. Many commercial sites simply select the reviews with the highest quality, according to the votes they have received by users who read the reviews. However, recent work has shown that such a selection may contain redundant information. Therefore, while selecting top reviews, it has been proposed to also consider their coverage (i.e., how many product aspects are covered by them). The goal of this paper is to further improve the top reviews set, using personalization criteria. This is motivated by the fact that the importance of product aspects to different users may vary and users prefer to focus on the most important aspects to them. The objective of our work is to consider the personal preferences of users in review recommendation, by selecting a personalized top reviews set (PTRS), which includes reviews of which the content is related to the aspects important to the user. An experimental evaluation with two public review datasets demonstrates the effectiveness of our approach on computing PTRS that have high quality, coverage, and relevance to the aspects that are important for the user.</p>",
     },
-	
+/* 	
     {
         id : "trm_neurocomputing",
         name : "A Topic Drift Model for Authorship Attribution.",
@@ -88,7 +110,7 @@ var papers = new Array (
 		year : "2017",
         paperAbstract : "<p>Authorship attribution is an active research direction due to its legal and financial importance. Its goal is to identify the authorship from the anonymous texts. In this paper, we propose a Topic Drift Model (TDM), which can monitor the dynamicity of authors’ writing styles and learn authors’ interests simultaneously. Unlike previous authorship attribution approaches, our model is sensitive to the temporal information and the ordering of words. Thus it can extract more information from texts. The experimental results show that our model achieves better results than other models in terms of accuracy. We also demonstrate the potential of our model to address the authorship verification problem.</p>",
     },
-	
+
     {
         id : "plr_geoinf",
         name : "Personalized Location Recommendation by Aggregating Multiple Recommenders in Diversity.",
@@ -122,7 +144,7 @@ var papers = new Array (
 		year : "2017",
         paperAbstract : "<p>We present an attention-based bidirectional LSTM approach to improve the target-dependent sentiment classification. Our method learns the alignment between the target entities and the most distinguishing features. We conduct extensive experiments on a real-life dataset. The experimental results show that our model achieves state-of-the-art results.</p>",
     },	
-	
+*/	
     {
         id : "irec_sigir",
         name : "Investment Recommendation using Investor Opinions in Social Media.",
@@ -133,7 +155,7 @@ var papers = new Array (
 		year : "2016",
         paperAbstract : "<p>Investor social media, such as StockTwist, are gaining increasing popularity. These sites allow users to post their investing opinions and suggestions in the form of microblogs. Given the growth of the posted data, a significant and challenging research problem is how to utilize the personal wisdom and different viewpoints in these opinions to help investment. Previous work aggregates sentiments related to stocks and generates buy or hold recommendations for stocks obtaining favorable votes while suggesting sell or short actions for stocks with negative votes. However, considering the fact that there always exist unreasonable or misleading posts, sentiment aggregation should be improved to be robust to noise. In this paper, we improve investment recommendation by modeling and using the quality of each investment opinion. To model the quality of an opinion, we use multiple categories of features generated from the author information, opinion content and the characteristics of stocks to which the opinion refers. Then, we discuss how to perform investment recommendation (including opinion recommendation and portfolio recommendation) with predicted qualities of investor opinions. Experimental results on real datasets demonstrate effectiveness of our work in recommending high-quality opinions and generating profitable investment decisions.</p>",
     },	
-	
+/*	
     {
         id : "dai_sigir",
         name : "Discovering Author Interest Evolution in Topic Modeling.",
@@ -144,7 +166,7 @@ var papers = new Array (
 		year : "2016",
         paperAbstract : "<p>Discovering the author's interest over time from documents has important applications in recommendation systems, authorship identification and opinion extraction. In this paper, we propose an interest drift model (IDM), which monitors the evolution of author interests in time-stamped documents. The model further uses the discovered author interest information to help finding better topics. Unlike traditional topic models, our model is sensitive to the ordering of words, thus it extracts more information from the semantic meaning of the context. The experiment results show that the IDM model learns better topics than state-of-the-art topic models.</p>",
     },	
-
+*/
 	
     {
         id : "tsom_aaai",
@@ -167,7 +189,7 @@ var papers = new Array (
 		year : "2015",
         paperAbstract : "<p>A large-scale training corpus consisting of microblogs belonging to a desired category is important for high-accuracy microblog retrieval. Obtaining such a large-scale microblgging corpus manually is very time and labor-consuming. Therefore, some models for the automatic retrieval of microblogs froman exterior corpus have been proposed. However, these approaches may fail in considering microblog-specific features. To alleviate this issue, we propose a methodology that constructs a simulated microblogging corpus rather than directly building a model from the exterior corpus. The performance of our model is better since the microblog-special knowledge of the microblogging corpus is used in the end by the retrieval model. Experimental results on real-world microblogs demonstrate the superiority of our technique compared to the previous approaches.</p>",
     },	
-	
+/*		
     {
         id : "ostopic_aaai",
         name : "Order-sensitive and Semantic-aware Topic Modeling Microblogging Corpus. ",
@@ -178,7 +200,7 @@ var papers = new Array (
 		year : "2015",
         paperAbstract : "<p>Topic modeling of textual corpora is an important and challenging problem. In most previous work, the “bag-of-words” assumption is usually made which ignores the ordering of words. This assumption simplifies the computation, but it unrealistically loses the ordering information and the semantic of words in the context. In this paper, we present a Gaussian Mixture Neural Topic Model (GMNTM) which incorporates both the ordering of words and the semantic meaning of sentences into topic modeling. Specifically, we represent each topic as a cluster of multi-dimensional vectors and embed the corpus into a collection of vectors generated by the Gaussian mixture model. Each word is affected not only by its topic, but also by the embedding vector of its surrounding words and the context. The Gaussian mixture components and the topic of documents, sentences and words can be learnt jointly. Extensive experiments show that our model can learn better topics and more accurate word distributions for each topic. Quantitatively, comparing to state-of-the-art topic modeling approaches, GMNTM obtains significantly better performance in terms of perplexity, retrieval accuracy and classification accuracy.</p>",
     },	
-
+*/
 		
     {
         id : "apr_pakdd",
@@ -201,7 +223,7 @@ var papers = new Array (
 		year : "2015",
         paperAbstract : "<p>Due to the increasing popularity of microblogging platforms (e.g., Twitter), detecting real-time news from microblogs (e.g., tweets) has recently drawn much attention. Most of the previous work on this subject detect news by analyzing propagation patterns of microblogs. This approach has two limitations: (i) many non-news microblogs (e.g. marketing activities) have propagation patterns similar to news microblogs and therefore can be falsely reported as news; (ii) using propagation patterns to identify news involves a time delay until the pattern is formed, therefore news are not detected early. We propose an alternative approach, which, motivated by the necessity of early detection of news, does not rely on propagation of posts. Moreover, an early sorting strategy is also proposed to define an order of values of detected news microblogs using a translational approach. An experimental evaluation on a large-scale microblogging dataset demonstrates the effectiveness of our approach.</p>",
     },	
-		
+/*		
     {
         id : "dmnn_acl",
         name : "Deep Markov Neural Network for Sequential Data Classification.",
@@ -224,7 +246,7 @@ var papers = new Array (
 		year : "2015",
         paperAbstract : "<p>Analyzing public opinions towards products, services and social events is an important but challenging task. An accurate sentiment analyzer should take both lexicon-level information and corpus-level information into account. It also needs to exploit the domainspecific knowledge and utilize the common knowledge shared across domains. In addition, we want the algorithm being able to deal with missing labels and learning from incomplete sentiment lexicons. This paper presents a LCCT (Lexicon-based and Corpus-based, Co-Training) model for semi-supervised sentiment classification. The proposed method combines the idea of lexicon-based learning and corpus-based learning in a unified cotraining framework. It is capable of incorporating both domain-specific and domainindependent knowledge. Extensive experiments show that it achieves very competitive classification accuracy, even with a small portion of labeled data. Comparing to state-ofthe-art sentiment classification methods, the LCCT approach exhibits significantly better performances on a variety of datasets in both English and Chinese.</p>",	
     },	
-
+*/
 
     {
         id : "del_icpr",
@@ -316,7 +338,7 @@ var papers = new Array (
         paperAbstract : "<p>Spatial filtering is an important step of preprocessing for electroencephalogram (EEG) signals. Extreme energy ratio (EER) is a recently proposed method to learn spatial filters for EEG classification. It selects several eigenvectors from top and end of the eigenvalue spectrum resulting from a spectral decomposition to construct a group of spatial filters as a filter bank. However, that strategy has some limitations and the spatial filters in the group are often selected improperly. Therefore the energy features filtered by the filter bank do not contain enough discriminative information or severely overfit on small training samples. This paper utilize one of the penalized feature selection strategies called LASSO to aid us to construct the spatial filter bank termed LASSO spatial filter bank. It can learn a better selection of the spatial filters. Then two different classification methods are presented to evaluate our LASSO spatial filter bank. Their excellent performances demonstrate the stronger generalization ability of the LASSO spatial filter bank, as shown by the experimental results.</p>",
     },	
 
-
+/*
     {
         id : "mvssl_isnn",
         name : "View construction for multi-view semi-supervised Learning.",
@@ -327,6 +349,6 @@ var papers = new Array (
 		year : "2014b",
         paperAbstract : "<p>Recent developments on semi-supervised learning have witnessed the effectiveness of using multiple views, namely integrating multiple feature sets to design semi-supervised learning methods. However, the so-called multi-view semi-supervised learning methods require the availability of multiple views. For many problems, there are no ready multiple views, and although the random split of the original feature sets can generate multiple views, it is definitely not the most effective approach for view construction. In this paper, we propose a feature selection approach to construct multiple views by means of genetic algorithms. Genetic algorithms are used to find promising feature subsets, two of which having maximum classification agreements are then retained as the best views constructed from the original feature set. Besides conducting experiments with single-task support vector machine (SVM) classifiers, we also apply multi-task SVM classifiers to the multi-view semi-supervised learning problem. The experiments validate the effectiveness of the proposed view construction method.</p>",
     },	
-
+*/
 	
 );

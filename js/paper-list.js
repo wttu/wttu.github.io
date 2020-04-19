@@ -22,7 +22,7 @@ var papers = new Array (
 	
     {
         id : "hhmf_DMKD",
-        name : "HHMF: hidden hierarchical matrix factorization for recommender systems.",
+        name : "HHMF: Hidden Hierarchical Matrix Factorization for Recommender Systems.",
 		tags : new Array(tagList.ml, tagList.recsys),
         coauthors : new Array(authorList.hli,authorList.yliu,authorList.yqqian, authorList.nikos, authorList.wttu_c, authorList.david),
         conference : "Data Mining and Knowledge Discovery",
@@ -33,7 +33,7 @@ var papers = new Array (
 
     {
         id : "acq_KBS",
-        name : "Advanced community question answering by leveraging external knowledge and multi-task learning",
+        name : "Advanced Community Question Answering by Leveraging External Knowledge and Multi-task Learning",
 		tags : new Array(tagList.ml, tagList.dl, tagList.nlp),
         coauthors : new Array(authorList.myang, authorList.wttu_c, authorList.qqiang, authorList.wzhao, authorList.qliu, authorList.jzhu),
         conference : "Knowledge-Based Systems",

@@ -100,6 +100,19 @@ var authorList = {
     fjin : {
         name : "Feng Jin",
     },		
-	
-
+    yliu : {
+        name : "Yu Liu",
+    },		
+    yqqian : {
+        name : "Yuqiu Qian",
+    },	
+    hli : {
+        name : "Hiu Li",
+    },	
+    wzhou : {
+        name : "Wei Zhou",
+    },	
+    qliu : {
+        name : "Qiao Liu",
+    },
 };

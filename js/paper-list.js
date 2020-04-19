@@ -35,7 +35,7 @@ var papers = new Array (
         id : "acq_KBS",
         name : "Advanced Community Question Answering by Leveraging External Knowledge and Multi-task Learning",
 		tags : new Array(tagList.ml, tagList.dl, tagList.nlp),
-        coauthors : new Array(authorList.myang, authorList.wttu_c, authorList.qqiang, authorList.wzhao, authorList.qliu, authorList.jzhu),
+        coauthors : new Array(authorList.myang, authorList.wttu_c, authorList.qqiang, authorList.wzhou, authorList.qliu, authorList.jzhu),
         conference : "Knowledge-Based Systems",
         type : "j",
 		year : "2019",

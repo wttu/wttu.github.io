@@ -115,4 +115,7 @@ var authorList = {
     qliu : {
         name : "Qiao Liu",
     },
+    yshen : {
+        name : "Ying Shen",
+    },
 };
